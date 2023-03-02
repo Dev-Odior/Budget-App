@@ -32,10 +32,11 @@ h1 {
   padding-bottom: 2rem;
   border-radius: 2px;
   position: relative;
+  overflow: hidden;
 }
 
 form {
-  margin: 20px 0px;
+  margin: 50px 0px;
 }
 .form-center {
   display: flex;
@@ -181,16 +182,16 @@ label {
 .alert {
   padding: 0.75rem 1.25rem;
   border: 1px solid black;
+  border-left: none;
+  border-right: none;
   color: silver;
   text-align: center;
-  /* text-transform: uppercase; */
-  width: 90%;
-  margin: 2rem auto 0 auto;
+  width: 100%;
+  margin: 2rem 0px 2rem -20px;
   border-radius: 2px;
   align-self: center;
   text-transform: capitalize;
   position: absolute;
-  left: 10%;
   top: 0px;
 }
 .alert-danger {
@@ -215,6 +216,10 @@ label {
   .list,
   .alert {
     width: 70%;
+  }
+
+  .alert {
+    width: 100%;
   }
   .list {
     margin: 2rem auto 0 auto;
